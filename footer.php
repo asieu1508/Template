@@ -3,6 +3,9 @@
 		
 	</div>
 </footer>
+</div>
+<div class="sb-slidebar sb-left"></div>
+<div class="sb-slidebar sb-right"></div>
 <script language="javascript" src="js/bxslider/bxslider.js"></script>
 <script language="javascript" src="js/hdslider/hdslider.js"></script>
 <script language="javascript" src="js/responsiveImg.js"></script>
