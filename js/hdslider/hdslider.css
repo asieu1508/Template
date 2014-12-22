@@ -1,0 +1,81 @@
+.slide-container {
+	height: 514px;
+	overflow: hidden;
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	position: relative;
+}
+.slide-container .slide-stage{
+	height: 100%;
+    position: relative;
+}
+.slide-container .slide-image {
+    left: 0;
+    position: absolute;
+    top: 0;
+	opacity:0;
+}
+.slide-container .slide-image img {
+	width: 100%;
+}
+.slide-container .slide-image:first-child{
+	opacity:1;
+}
+.slide-container .slide-pager {
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+.slide-container .slide-pager ul {
+    float: right;
+    margin: 10px 0 0;
+    padding: 0;
+    width: auto;
+}
+.slide-container .slide-pager-slot {
+    background: none repeat scroll 0 0 #999999;
+    display: block;
+    float: left;
+    height: 15px;
+    list-style: none outside none;
+    margin: 0 5px 0 0;
+    width: 15px;
+	cursor:pointer;
+}
+.slide-container .slide-pager-slot:hover{
+	background:red;
+}
+.slide-container .slide-pager ul .focus{
+	background:green;
+}
+.slide-container .slide-control-prev, .slide-container .slide-control-next {
+	color: transparent;
+	position: absolute;
+	text-align: center;
+	width: 31px;
+	height: 164px;
+	cursor:pointer;
+	top: 36%;
+	opacity: 0.6;
+	display: none;
+}
+.slide-container .slide-control-prev {
+	background: url(pre.png) no-repeat;
+	left: 20px;
+}
+.slide-container .slide-control-next {
+	background: url(next.png) no-repeat;
+	right: 20px;
+}
+.slide-container:hover .slide-control-prev, .slide-container:hover .slide-control-next {
+	display: block;
+}
+.slide-container .slide-control-prev:hover, .slide-container .slide-control-next:hover {
+	opacity: 1;
+}
+.slide-container .slide-container .slide-pager {
+	width: 100%;
+	display: none;
+}

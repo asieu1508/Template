@@ -1,0 +1,478 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+*:before, *:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#444;
+	position: relative;
+}
+
+img {
+	border:none;
+}
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+.clear {
+	clear: both;
+}
+
+/************** Begin form element **************/
+
+.form-control {
+	display: block;
+	width: 100%;
+	padding: 7px 12px;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #555555;
+	vertical-align: middle;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.form-control:focus {
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px #fe0000, 0 0 8px #fe0000;
+	box-shadow: inset 0 1px 1px #fe0000, 0 0 8px #fe0000;
+}
+textarea.form-control {
+	height: auto;
+}
+
+button {
+	cursor: pointer;
+}
+
+button:focus {
+	outline: 0;
+}
+
+.button {
+	text-decoration: none;
+	border: none;
+	background: #fe0000;
+	color: #fff;
+	text-align: center;
+	padding: 7px 20px;
+	font-weight: bold;
+	border-radius: 3px;
+	-webkit-transition: all .25s ease-in-out;
+	   -moz-transition: all .25s ease-in-out;
+	    -ms-transition: all .25s ease-in-out;
+	     -o-transition: all .25s ease-in-out;
+	        transition: all .25s ease-in-out;
+}
+.button:hover, .button:active {
+	background: #BD0101;
+}
+
+.i-switch input {
+    position: absolute;
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+
+.i-switch input:checked+i:before, .i-switch input:checked+label+i:before  {
+    top: 50%;
+    right: 5px;
+    bottom: 50%;
+    left: 50%;
+    border-width: 0;
+    border-radius: 5px
+}
+
+.i-switch input:checked+i:after, .i-switch input:checked+label+i:after {
+    margin-left: 16px
+}
+
+.i-switch i:before {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 30px;
+    content: "";
+    -webkit-transition: all .2s;
+    transition: all .2s
+}
+
+.i-switch i:after {
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    width: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    content: "";
+    -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+    -webkit-transition: margin-left .3s;
+    transition: margin-left .3s
+}
+
+.i-switch-md {
+    width: 40px;
+    height: 24px
+}
+
+.i-switch-md input:checked+i:after,.i-switch-md input:checked+label+i:after {
+    margin-left: 17px
+}
+
+.i-switch-md i:after {
+    width: 22px
+}
+
+.i-switch-lg {
+    width: 50px;
+    height: 30px
+}
+
+.i-switch-lg input:checked+i:after, .i-switch-lg input:checked+label+i:after {
+    margin-left: 21px
+}
+
+.i-switch-lg i:after {
+    width: 28px
+}
+
+.i-checks {
+    padding-left: 20px;
+    cursor: pointer
+}
+
+.i-checks input {
+    position: absolute;
+    margin-left: -20px;
+    opacity: 0
+}
+
+.i-checks input:checked+i,.i-checks input:checked+label+i {
+    border-color: #23b7e5
+}
+
+.i-checks input:checked+i:before,.i-checks input:checked+label+i:before {
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    background-color: #23b7e5
+}
+
+.i-checks input:checked+span .active {
+    display: inherit
+}
+
+.i-checks input[type="radio"]+i,.i-checks input[type="radio"]+i:before,
+.i-checks input[type="radio"]+label+i,.i-checks input[type="radio"]+label+i:before  {
+    border-radius: 50%
+}
+
+.i-checks input[disabled]+i,fieldset[disabled] .i-checks input+i,
+.i-checks input[disabled]+label+i,fieldset[disabled] .i-checks input+label+i {
+    border-color: #dee5e7
+}
+
+.i-checks input[disabled]+i:before,fieldset[disabled] .i-checks input+i:before,
+.i-checks input[disabled]+label+i:before,fieldset[disabled] .i-checks input+label+i:before{
+    background-color: #dee5e7
+}
+
+.i-checks>i {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: -2px;
+    margin-right: 4px;
+    margin-left: -20px;
+    line-height: 1;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #cfdadd
+}
+
+.i-checks>i:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    content: "";
+    -webkit-transition: all .2s;
+    transition: all .2s
+}
+
+.i-checks>span {
+    margin-left: -20px
+}
+
+.i-checks>span .active {
+    display: none
+}
+
+.i-checks-sm input:checked+i:before,.i-checks-sm input:checked+label+i:before  {
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px
+}
+
+.i-checks-sm>i {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    margin-left: -18px
+}
+
+.i-checks-lg input:checked+i:before,.i-checks-lg input:checked+label+i:before {
+    top: 8px;
+    left: 8px;
+    width: 12px;
+    height: 12px
+}
+
+.i-checks-lg>i {
+    width: 30px;
+    height: 30px
+}
+
+.input-group {
+    width: 100%;
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    margin-bottom: 15px;
+
+}
+
+.input-group .form-control {
+    width: 85%;
+    float: left;
+    height: 34px;
+    border-radius: 3px 0 0 3px;
+}
+.input-group .button {
+    background: #0080C5;
+    float: left;
+    border: 0;
+    width: 15%;
+    max-width: 60px;
+    color: #fff;
+    height: 34px;
+    border-radius: 0 3px 3px 0;
+}
+.input-group .button i {
+    color: #FCFCFC;
+    font-size: 18px;
+}
+.input-group .button:hover {
+    background: #018DD8;
+}
+/************** End form element **************/
+
+/************** Begin breadcrumb **************/
+.breadcrumb {
+	clear: both;
+	padding: 8px 0;
+	margin-top: 10px;
+	list-style: none;
+}
+
+.breadcrumb > li {
+	display: inline-block;
+}
+.breadcrumb > li + li:before {
+	padding: 0 5px;
+	color: #cccccc;
+	content: "/\00a0";
+}
+
+.breadcrumb > li a {
+	text-decoration: none;
+	color: #afafaf;
+}
+.breadcrumb > li:first-child a {
+	color: #fe0000;
+}
+
+.breadcrumb > .active {
+	color: #999999;
+}
+
+/************** End breadcrumb **************/
+
+/************** Begin Tab **************/
+.tab-head {
+	list-style: none;
+	height: 43px;
+	position: relative;
+	border-bottom: 1px solid #fe0000;
+}
+
+.tab-head li {
+	float: left;
+	margin-right: 5px;
+	background-color: #f0f0f0;
+	padding: 12px 20px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.tab-head li.active {
+	background-color: #fe0000;
+	color: #fff;
+}
+.main-tab {
+	clear: both;
+}
+.main-tab .content {
+	display: none;
+	padding: 15px;
+	line-height: 1.5;
+}
+.main-tab .content.active {
+	display: block;
+}
+.content img {
+	max-width: 100%;
+}
+.content p {
+	line-height: 1.5;
+	margin-bottom: 10px;
+}
+
+/************** End Tab **************/
+
+/************** Begin Accordion **************/
+.accordion {
+	margin-left: 0!important;
+}
+.accordion li {
+	list-style: none;
+	padding: 10px 20px;
+	background: #f0f0f0;
+	margin-bottom: 5px;
+	cursor: pointer;
+	position: relative;
+	padding-left: 40px;
+	font-weight: bold;
+}
+.accordion li:before {
+	position: absolute;
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: "\f196";
+	font-size: 18px;
+	top: 11px;
+	left: 20px;
+	color: #fe0000;
+	-webkit-transition: all .25s ease-in-out;
+	   -moz-transition: all .25s ease-in-out;
+	    -ms-transition: all .25s ease-in-out;
+	     -o-transition: all .25s ease-in-out;
+	        transition: all .25s ease-in-out;
+}
+.accordion li.active:before {
+	content: "\f147";
+}
+/************** End accordion **************/
+/************** Begin pagination **************/
+.pagination {
+    margin: 10px 0;
+}
+
+.pagination a {
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1; /* Fix for IE7 */
+    *display: inline; /* Fix for IE7 */
+    padding: 8px 14px;
+    background-color: #fff;
+    text-decoration: none;
+    float: left;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    border-left: 1px solid #efefef;
+
+}
+.pagination a.currentpage {
+    background-color: #D7D7D7;
+    color: #000;
+    font-weight: bold;
+}
+.pagination a:hover {
+    background-color: #1481bc;
+    color: #fff;
+}
+.pagination a.currentpage:hover {
+    background-color: #D7D7D7;
+    color: #000
+}
+.pagination a:first-child {
+     border-radius: 3px 0 0 3px;
+}
+.pagination a:last-child {
+    border-right: 1px solid #efefef;
+    border-radius: 0 4px 4px 0;
+}
+
+/************** End pagination **************/
+
+
+/************** Begin Modal **************/
+.modal {
+	background: #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #ededed;
+    -webkit-box-shadow: rgba(0,0,0,.6) 0px 2px 12px;
+    -moz-box-shadow:  rgba(0,0,0,.6) 0px 2px 12px;;
+    width: 90%;
+    max-width:600px;
+    position: relative;
+    display: none;
+}
+.modal-title {
+	color: #0194E4;
+	border-bottom: 1px solid #ededed;
+	padding: 15px;
+}
+.modal-content {
+	padding: 0 15px;
+}
+.modal-footer {
+	display: block;
+	padding: 0 15px;
+	height: 50px;
+}
+.modal-footer .btn {
+	margin: 0 5px;
+}
+
+/************** End Modal **************/

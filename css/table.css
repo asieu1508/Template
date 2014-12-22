@@ -1,0 +1,98 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  clear: both;
+}
+
+.table {
+	width: 100%;
+  	margin-bottom: 20px;
+
+}
+
+.table-bordered td,
+.table-bordered  th {
+ 	border: 1px solid #ddd;
+ }
+table td,
+.table th {
+	padding: 8px;
+	/*position: relative;*/
+}
+.table th:active {
+	outline: 0;
+}
+.table-striped tr:nth-child(2n) td {
+  background-color: rgba(0,0,0, 0.02);
+}
+.table thead th {
+	padding-right: 15px;
+}
+.table thead tr{
+	background: #F7F7F7;
+}
+
+
+.table-container {
+	display: table;
+	margin-bottom: 15px;
+}
+.table-container .row.head {
+	font-weight: bold;
+	text-align: center;
+}
+.table-container .row {
+	display: table-row;
+}
+.table-container .column {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 15px 10px;
+}
+.table-container a {
+	display: block;
+	width: 100%;
+}
+.table-container.table-bordered {
+	border-top: 1px solid #efefef;
+	border-right: 1px solid #efefef;
+}
+.table-container.table-bordered .column {
+	border-bottom: 1px solid #efefef;
+	border-left: 1px solid #efefef;
+}
+
+.table-container.w-100-per {
+	width: 100%;
+}
+
+.table-container a {
+	display: block;
+	text-decoration: none;
+}
+.table-container .head {
+	background-color: #0194E4;
+	color: #fff;
+	
+}
+.table-container .head .column:first-child {
+	border-radius: 3px 0 0 0;
+}
+.table-container .head .column:last-child {
+	border-radius: 0 3px 0 0;
+}
+.table-container .head .column {
+	border-bottom: 2px solid #ccc;
+}
+.table-container.hover .row:hover {
+	background-color: #CDECFD;
+}
+.table-container.hover .row.head:hover {
+	background-color: #1481bc;
+}
+.table-striped .row:nth-child(even) {
+	background-color: #f9f9f9;
+}
+.column-span-5 {
+	 display: block;
+}
