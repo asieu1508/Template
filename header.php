@@ -13,6 +13,7 @@
 	<script src="js/jquery.js"></script>
 </head>
 <body>
+<div id="sb-site">
 <div class="top-menu">
 	<div class="container">
 		<div class="hotline"><strong>HOTLINE</strong>: 0903 96 05 05</div>
